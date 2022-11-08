@@ -43,9 +43,8 @@ function addRecipesToDocument(recipes) {
   //            create a <recipe-card> element for each one, and populate
   //            each <recipe-card> with that recipe data using element.data = ...
   //            Append each element to <main>
-  var recipe;
   for (var i = 0; i < recipes.length; i++) {
-    recipe = document.createElement("recipe-card")
+    var recipe = document.createElement("recipe-card")
     recipe.data = recipes[i];
     main.appendChild(recipe);
   }
